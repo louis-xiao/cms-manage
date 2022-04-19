@@ -1,21 +1,27 @@
 import { Outlet } from 'react-router-dom'
 import './assets/base.less'
 import Header from './components/Header';
-
+import Aside from './components/Aside';
+import Bread from './components/Bread';
 import { Layout } from 'antd';
 
-const { Sider, Content } = Layout;
 
 export default function App() {
   return (
     <div>
-      <Layout>
+      <Layout id="app">
         <Header />
-        <Layout>
-          <Sider>Sider</Sider>
-          <Content><Outlet /></Content>
-        </Layout>
-        <footer>Footer</footer>
+          <div className="container">
+            <Aside />
+            <div className="container_box">
+              <Bread />
+              <div className="container_content">
+                <Outlet />
+              </div>
+              
+            </div>
+          </div>
+          <footer>Footer</footer>
       </Layout>
     </div>
   )
