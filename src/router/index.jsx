@@ -1,11 +1,11 @@
 import {Routes,Route,BrowserRouter as Router} from 'react-router-dom'
 
 import App from '../App'
-import Edit from '../components/Edit'
-import List from '../components/List'
-import Login from '../components/Login'
-import Means from '../components/Means'
-import Register from '../components/Register'
+import Edit from '../pages/Edit'
+import List from '../pages/List'
+import Login from '../pages/Login'
+import Means from '../pages/Means'
+import Register from '../pages/Register'
 
 
 

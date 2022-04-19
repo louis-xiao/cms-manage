@@ -15,8 +15,16 @@ export default function Login() {
       username: values.username,
       password: values.password
     }).then(res=>{
+      console.log(res)
       if(res.errCode===0){
         message.success(res.message)
+        //存储数据
+        localStorage.setItem('avatar',res.data.avatar)
+        localStorage.setItem('cms-token',res.data['cms-token'])
+        localStorage.setItem('editable',res.data.editable)
+        localStorage.setItem('player',res.data.player)
+        localStorage.setItem('username',res.data.username)
+        //跳转页面
         setTimeout(()=>{
           navigate('/')
         },1500)
