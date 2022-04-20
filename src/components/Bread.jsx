@@ -13,11 +13,11 @@ export default function Bread() {
     },[pathname])
 
   return (
-    <Breadcrumb>
+    <Breadcrumb  style={{height:'30px'}}>
     <Breadcrumb.Item href="/">
       <HomeOutlined />
     </Breadcrumb.Item>
-    <Breadcrumb.Item href='/list'>
+    <Breadcrumb.Item href={pathname.split('/')[1]}>
         {breadName}
     </Breadcrumb.Item>
   </Breadcrumb>

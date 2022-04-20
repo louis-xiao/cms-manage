@@ -34,7 +34,8 @@ export default function Aside() {
       theme='dark'
       onClick={handleClick}
     >
-      <Menu.Item key="list"><AppstoreOutlined />  查看文章列表</Menu.Item>
+      <Menu.Item key="listTable"><AppstoreOutlined />  查看文章列表Table</Menu.Item>
+      <Menu.Item key="listList"><AppstoreOutlined />  查看文章列表List</Menu.Item>
       <Menu.Item key="edit"><MailOutlined />  文章编辑</Menu.Item>
       <Menu.Item key="means"><SettingOutlined />  修改资料</Menu.Item>
     </Menu>
