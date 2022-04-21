@@ -9,6 +9,8 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "@wangeditor/editor": "^5.0.1",
+    "@wangeditor/editor-for-react": "^1.0.1",
     "antd": "^4.19.5",
     "axios": "^0.26.1",
     "babel-jest": "^27.4.2",

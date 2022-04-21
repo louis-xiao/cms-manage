@@ -22,7 +22,7 @@ export default function Header() {
         if(username1){
             setUsername(username1)
         }
-    })
+    },[localStorage.getItem('avatar')])
 
     const logout=()=> {
         localStorage.clear()
